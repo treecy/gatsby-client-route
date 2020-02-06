@@ -1,9 +1,10 @@
-import React from "react"
-import { Router, Link } from "@reach/router"
+import * as React from "react"
+import { Router, Link, RouteComponentProps } from "@reach/router"
 import Home from "./home"
 import Item from "./item"
+import About from "./about"
 
-const App = ({ children }) => (
+const App: React.FC<RouteComponentProps> = ({ children }) => (
   <div className="app">
     <nav className="nav">
       <Link to="/">Home</Link> 
@@ -18,7 +19,8 @@ const Root = () => (
   <Router>
     <App path='/'>
       <Home path="/" />
-      <Item path="item/:itemId" />
+      <About path="/about" />
+      <Item path="/item/:itemId" />
     </App>
   </Router>
 )
