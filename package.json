@@ -20,9 +20,11 @@
     "@types/react-loadable": "5.5.3",
     "gatsby": "^2.19.7",
     "gatsby-plugin-typescript": "2.1.27",
+    "lit-element": "2.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-transition-group": "4.3.0"
+    "react-transition-group": "4.3.0",
+    "rendertron": "2.0.1"
   },
   "devDependencies": {
     "@prerenderer/prerenderer": "0.7.2",
@@ -30,6 +32,7 @@
     "@types/node": "13.7.0",
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
+    "babel-preset-gatsby": "0.2.29",
     "html-minifier": "4.0.0",
     "prerender-spa-plugin": "3.4.0",
     "prettier": "^1.19.1"

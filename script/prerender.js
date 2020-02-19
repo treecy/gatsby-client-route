@@ -71,6 +71,7 @@ PrerenderSPAPlugin.prototype.render = function () {
       console.log('[prerender plugin] Create dirs and write prerendered files.')
 
       return Promise.all(processedRoutes.map(processedRoute => {
+        console.log(processedRoute.outputPath)
         return mkdirp(path.dirname(processedRoute.outputPath))
           .then(() => {
             return new Promise((resolve, reject) => {

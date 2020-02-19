@@ -31,13 +31,13 @@ exports.createPages = async ({ actions: { createPage } }) => {
 exports.onPostBuild = async () => {
   const renderer = new Prerender({
     staticDir: path.join(__dirname, 'public'),
+    outputDir: path.join(__dirname, 'public/prerendered'),
     routes: ['/', '/item/123'],
     postProcess (renderedRoute) {
       try {
         console.log(renderedRoute.route)
         if (renderedRoute.originalRoute.startsWith('/item')){
-          const outputPath = path.join(__dirname, '/public/item/index.html')
-          console.log(outputPath)
+          const outputPath = path.join(__dirname, '/public/prerendered/item/index.html')
           renderedRoute.outputPath = outputPath
         }
       }catch(e){
