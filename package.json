@@ -24,7 +24,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-transition-group": "4.3.0",
-    "rendertron": "2.0.1"
+    "rendertron": "3.0.0"
   },
   "devDependencies": {
     "@prerenderer/prerenderer": "0.7.2",
